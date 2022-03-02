@@ -1,0 +1,138 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+  
+	overflow-x: hidden;
+	position: relative;
+	font-size: 110%;
+}
+
+
+.social-buttons a{
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+}
+
+.social-buttons a::before{
+  content: "";
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover::before{
+  transform: scale(0);
+}
+
+.social-buttons a i{
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover i{
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
+
+/*****************************************************************//************************NAVIGATION AND MAIN HEADER ************/
+
+#main-header {
+	background:url("../images/banner.SVG") no-repeat ;
+	background-size: 1920px 1122px;
+  background-size: cover;
+	height: 130vh;
+}
+
+#main-header #nav {
+  -webkit-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+
+#main-header #nav .navbar-brand .logo {
+  position: relative;
+  font-size: 2rem;
+  padding: 0.3rem 0.85rem;
+  top: 1.1rem;
+}
+
+#main-header #nav .navbar-brand .logo-name {
+  position: relative;
+  top: 4px;
+}
+
+#main-header #nav .navbar-brand .logo-title {
+  position: relative;
+  font-size: 70%;
+  top: -12px;
+  left: 40px;
+}
+.typewriter  {
+  display: inline;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .05em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+/*****************************************************************//************************Intro************/
+
+.round{
+	border-radius: 30px;
+}
+.intro #intro-content {
+  position: relative;
+  top: 20vh;
+}
+
+@media (min-width: 992px) {
+  .intro #intro-content p.lead {
+    font-size: 140%;
+  }
+  .intro #intro-content h1.display-4 {
+    font-size: 5.5rem;
+  }
+}
+/*****************************************************************//************************Cards Flexbox ************/
+
+.row1-container{
+	display: flex;
+  background-color: #22a6b3;
+	overflow-x: auto;
+  width: 100vw;
+}
+
+.box {
+	border-radius: 5px;
+	box-shadow: 0px 30px 40px -20px hsl(229, 6%, 66%);
+	padding: 30px;
+	margin: 20px;
+   width: 500px;
+   background-color: red;
+}
