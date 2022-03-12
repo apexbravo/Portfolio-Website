@@ -49,10 +49,9 @@ body{
 /*****************************************************************//************************NAVIGATION AND MAIN HEADER ************/
 
 #main-header {
-	background:url("../images/banner.SVG") no-repeat ;
-	background-size: 1920px 1122px;
+	background:url("../images/banner.SVG") no-repeat top center;
   background-size: cover;
-	height: 130vh;
+	height: 174vh;
 }
 
 #main-header #nav {
@@ -119,7 +118,7 @@ body{
     font-size: 5.5rem;
   }
 }
-/*****************************************************************//************************Cards Flexbox ************/
+/****************************************************Cards Flexbox ************/
 
 .row1-container{
 	display: flex;
@@ -135,4 +134,10 @@ body{
 	margin: 20px;
    width: 500px;
    background-color: red;
+}
+
+/****************************************************Profile pic************/
+#profilepic{
+  position: relative;
+  bottom: -18px;
 }
