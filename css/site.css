@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap');
+
 html{
 	scroll-behavior: smooth;
 }
@@ -51,7 +53,7 @@ body{
 #main-header {
 	background:url("../images/banner.SVG") no-repeat top center;
   background-size: cover;
-	height: 174vh;
+	height: 90vh;
 }
 
 #main-header #nav {
@@ -79,16 +81,21 @@ body{
 }
 .typewriter  {
   display: inline;
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .05em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 96px;
+  /* Ensures the content is not revealed until the animation */
 }
 
+.main-heading{
+  font-family: 'Bebas Neue', cursive;
+  font-size: 96px;
+}
+
+.intro-text
+{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+}
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
@@ -105,9 +112,13 @@ body{
 .round{
 	border-radius: 30px;
 }
+
 .intro #intro-content {
   position: relative;
-  top: 20vh;
+  top: 30vh;
+
+
+
 }
 
 @media (min-width: 992px) {
@@ -138,6 +149,10 @@ body{
 
 /****************************************************Profile pic************/
 #profilepic{
-  position: relative;
-  bottom: -18px;
+  height:540px;
+  width: 432px;
+  position: absolute;
+right: 0px;
+bottom: 0px;
+  
 }
