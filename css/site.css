@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400&display=swap');
 
 html{
 	scroll-behavior: smooth;
@@ -51,9 +51,11 @@ body{
 /*****************************************************************//************************NAVIGATION AND MAIN HEADER ************/
 
 #main-header {
-	background:url("../images/banner.SVG") no-repeat top center;
-  background-size: cover;
-	height: 90vh;
+  background-color: #B6C4E7;
+  height: 100vh;
+  overflow-y: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 #main-header #nav {
@@ -84,6 +86,20 @@ body{
   font-family: 'Bebas Neue', cursive;
   font-size: 96px;
   /* Ensures the content is not revealed until the animation */
+}
+
+.background-shape {
+  background: orange;
+  width: 480px;
+  height: 700px;
+  -ms-transform: skewY(-20deg);
+  -webkit-transform: skewY(-20deg); 
+  transform: skewY(-20deg);
+  border-radius: 30px;
+  position: absolute;
+  top: 60px;
+  left: 700px;
+  
 }
 
 .main-heading{
@@ -119,6 +135,11 @@ body{
 
 
 
+}
+.showcase-btn
+{
+  background-color: #072163;
+  color: white;
 }
 
 @media (min-width: 992px) {
