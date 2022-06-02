@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@700&display=swap');
 
 html{
 	scroll-behavior: smooth;
@@ -10,7 +10,10 @@ body{
 	font-size: 110%;
 }
 
-
+.logo-name{
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 90px;
+}
 .social-buttons a{
   display: inline-flex;
   text-decoration: none;
@@ -57,7 +60,16 @@ body{
   position: relative;
   overflow: hidden;
 }
-
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.nav-menu a 
+{
+  text-decoration: none;
+  color:#072163;
+}
 #main-header #nav {
   -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
@@ -83,13 +95,14 @@ body{
 }
 .typewriter  {
   display: inline;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Open Sans', sans-serif;
   font-size: 96px;
   /* Ensures the content is not revealed until the animation */
 }
 
 .background-shape {
-  background: orange;
+  background: #B9746B;
+
   width: 480px;
   height: 700px;
   -ms-transform: skewY(-20deg);
@@ -97,20 +110,22 @@ body{
   transform: skewY(-20deg);
   border-radius: 30px;
   position: absolute;
-  top: 60px;
-  left: 700px;
+  top: 50px;
+  left: 750px;
   
 }
 
 .main-heading{
-  font-family: 'Bebas Neue', cursive;
-  font-size: 96px;
+font-family: 'Open Sans', sans-serif;
+  font-size: 76px;
+  color: #072163;
 }
 
 .intro-text
 {
   font-family: 'Montserrat', sans-serif;
   font-size: 24px;
+  color: #072163;
 }
 /* The typing effect */
 @keyframes typing {
@@ -174,6 +189,73 @@ body{
   width: 432px;
   position: absolute;
 right: 0px;
+text-shadow: #072163 3px;
 bottom: 0px;
   
+}
+
+
+.wrapper{
+
+  text-align: center;
+  display: flex;
+  justify-content: start;
+}
+
+.wrapper .icon{
+position: relative;
+
+border-radius: 50%;
+border:solid #394B8C 1px;
+margin-left: 10px;
+width: 50px;
+height: 50px;
+line-height: 50px;
+font-size: 20px;
+display: inline-block;
+align-items: center;
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+color: #394B8C;
+text-decoration: none;
+}
+
+.wrapper .tooltip {
+position: absolute;
+top: 0;
+line-height: 1.5;
+font-size: 14px;
+background-color: #333;
+color: #394B8C;
+padding: 5px 8px;
+border-radius: 5px;
+box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+opacity: 0;
+pointer-events: none;
+transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+position: absolute;
+content: "";
+height: 8px;
+width: 8px;
+background-color: #ffffff;
+bottom: -3px;
+left: 50%;
+transform: translate(-50%) rotate(45deg);
+transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+top: -45px;
+opacity: 1;
+visibility: visible;
+pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
 }
