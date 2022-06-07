@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@700&display=swap');
 
+:root{
+  --text-color:#072163;
+}
 html{
 	scroll-behavior: smooth;
 }
@@ -194,7 +197,7 @@ bottom: 0px;
   
 }
 
-
+/****************************************************Icons Wrapper************/
 .wrapper{
 
   text-align: center;
@@ -226,7 +229,7 @@ position: absolute;
 top: 0;
 line-height: 1.5;
 font-size: 14px;
-background-color: #333;
+background-color: #ffffff;
 color: #394B8C;
 padding: 5px 8px;
 border-radius: 5px;
@@ -257,5 +260,45 @@ pointer-events: auto;
 
 .wrapper .icon:hover span,
 .wrapper .icon:hover .tooltip {
-text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+text-shadow: 0px -1px 0px rgb(255, 255, 255);
+}
+
+/****************************************************Scroll icon bar************/
+.scroll-downs {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  position: relative;
+  bottom: -104px;
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  margin: 0 auto;
+  border: 2px solid var(--text-color);
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: var(--text-color);
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
 }
