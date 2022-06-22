@@ -17,6 +17,7 @@ body{
 .logo-name{
   font-family: 'Open Sans', sans-serif;
   margin-left: 90px;
+  color: var(--text-color);
 }
 .social-buttons a{
   display: inline-flex;
@@ -72,6 +73,21 @@ background-color: #B6C4E7;
   display: flex;
   justify-content: space-between;
   
+}
+.emailbtn
+{
+  color: #072163;
+  border-color: #072163;
+}
+.emailbtn:hover{
+  color: #fff;
+  background-color: #072163;
+  border-color: #072163;
+}
+#logo{
+  position: absolute;
+  left: -50px;
+    top: -10px;
 }
 #nav-btn
 {
@@ -173,7 +189,7 @@ font-family: 'Open Sans', sans-serif;
   .intro #intro-content p.lead {
     font-size: 140%;
   }
-  .intro #intro-content h1.display-4 {
+  .intro #intro-content . {
     font-size: 5.5rem;
   }
 }
@@ -323,4 +339,10 @@ text-shadow: 0px -1px 0px rgb(255, 255, 255);
 .iconslider > div > img
 {
   height: 60px;
+}
+
+/****************************************************Responsiveness************/
+
+@media screen and (min-width:768px)  and (max-width:1023px){
+  
 }
