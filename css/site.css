@@ -145,14 +145,14 @@ background-color: #B6C4E7;
 
 .main-heading{
 font-family: 'Open Sans', sans-serif;
-  font-size: 76px;
+  font-size: 7vw;
   color: #072163;
 }
 
 .intro-text
 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
+  font-size: 2vw;
   color: #072163;
 }
 /* The typing effect */
@@ -174,7 +174,7 @@ font-family: 'Open Sans', sans-serif;
 
 .intro #intro-content {
   position: relative;
-  top: 25vh;
+  top: 21vh;
 
 
 
@@ -215,8 +215,9 @@ font-family: 'Open Sans', sans-serif;
 #profilepic{
   height:540px;
   width: 432px;
+  max-width: 100%;
   position: absolute;
-right: 0px;
+right: -100px;
 text-shadow: #072163 3px;
 bottom: 0px;
   
