@@ -17,6 +17,8 @@ body {
 .logo-name {
   font-family: 'Open Sans', sans-serif;
   margin-left: 90px;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   color: var(--text-color);
 }
 
@@ -64,7 +66,7 @@ body {
   background-color: #b6c4e7;
   height: 100vh;
 
-  position: relative;
+  position: absolute;
 
 }
 
