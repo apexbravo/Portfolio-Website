@@ -9,8 +9,9 @@ html {
 }
 
 body {
-
-  position: relative;
+  background-color: #b6c4e7;
+  height: 100vh;
+  overflow-y: hidden;
   font-size: 110%;
 }
 
@@ -32,41 +33,8 @@ body {
   margin: 0 8px;
 }
 
-.social-buttons a::before {
-  content: '';
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(45deg, #22a6b3, #30336b);
-  border-radius: 50%;
-  z-index: -1;
-  transition: 0.3s ease-in;
-}
-
-.social-buttons a:hover::before {
-  transform: scale(0);
-}
-
-.social-buttons a i {
-  transition: 0.3s ease-in;
-}
-
-.social-buttons a:hover i {
-  background: linear-gradient(45deg, #22a6b3, #30336b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transform: scale(2.2);
-}
-
 /*****************************************************************/
 /************************NAVIGATION AND MAIN HEADER ************/
-
-#main-header {
-  background-color: #b6c4e7;
-  height: 100vh;
-
-  position: relative;
-
-}
 
 .nav-scroll {
   background-color: #b6c4e7;
@@ -136,7 +104,7 @@ body {
 
 .background-shape {
   background: #b9746b;
-
+  z-index: -1;
   width: 480px;
   height: 700px;
   -ms-transform: skewY(-20deg);
@@ -145,7 +113,7 @@ body {
   border-radius: 30px;
   position: absolute;
   top: 50px;
-  left: 750px;
+  right: 0px;
 }
 
 .main-heading {
@@ -160,30 +128,6 @@ body {
   color: #072163;
 }
 
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-
-  from,
-  to {
-    border-color: transparent;
-  }
-
-  50% {
-    border-color: white;
-  }
-}
-
 /*****************************************************************/
 /************************Intro************/
 
@@ -191,53 +135,9 @@ body {
   border-radius: 30px;
 }
 
-.intro #intro-content {
-  position: relative;
-  top: 21vh;
-}
-
 .showcase-btn {
   background-color: #072163;
   color: white;
-}
-
-@media (min-width: 992px) {
-  .intro #intro-content p.lead {
-    font-size: 140%;
-  }
-
-  .intro #intro-content . {
-    font-size: 5.5rem;
-  }
-}
-
-/****************************************************Cards Flexbox ************/
-
-.row1-container {
-  display: flex;
-  background-color: #22a6b3;
-  overflow-x: auto;
-  width: 100vw;
-}
-
-.box {
-  border-radius: 5px;
-  box-shadow: 0px 30px 40px -20px hsl(229, 6%, 66%);
-  padding: 30px;
-  margin: 20px;
-  width: 500px;
-  background-color: red;
-}
-
-/****************************************************Profile pic************/
-#profilepic {
-  height: 540px;
-  width: 432px;
-  max-width: 100%;
-  position: absolute;
-  right: -100px;
-  text-shadow: #072163 3px;
-  bottom: 0px;
 }
 
 /****************************************************Icons Wrapper************/
@@ -366,10 +266,11 @@ body {
   background-color: #394b8c;
 }
 
-.iconslider>div>img {
+.iconslider > div > img {
   height: 60px;
 }
 
 /****************************************************Responsiveness************/
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+}
