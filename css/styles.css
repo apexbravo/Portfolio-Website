@@ -11,7 +11,7 @@ html {
 body {
   background-color: #b6c4e7;
   height: 100vh;
-  overflow-y: hidden;
+
   font-size: 110%;
 }
 
@@ -118,13 +118,13 @@ body {
 
 .main-heading {
   font-family: 'Open Sans', sans-serif;
-  font-size: 7vw;
+  font-size: 4.90rem;
   color: #072163;
 }
 
 .intro-text {
   font-family: 'Montserrat', sans-serif;
-  font-size: 2vw;
+  font-size: 1.5rem;
   color: #072163;
 }
 
@@ -266,11 +266,10 @@ body {
   background-color: #394b8c;
 }
 
-.iconslider > div > img {
+.iconslider>div>img {
   height: 60px;
 }
 
 /****************************************************Responsiveness************/
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-}
+@media screen and (min-width: 768px) and (max-width: 1023px) {}

@@ -5,7 +5,10 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  height: 100%;
+  margin: auto;
+  width: 960px;
+  overflow: scroll;
 }
 
 body {
