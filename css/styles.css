@@ -102,10 +102,22 @@ body {
   /* Ensures the content is not revealed until the animation */
 }
 
+#profilepic {}
+
+@media (max-width: 576px) {
+  .logo-name {
+    margin-left: 60px;
+  }
+
+  .imagediv {
+    background: #b9746b;
+  }
+}
+
 .background-shape {
   background: #b9746b;
   z-index: -1;
-  width: 480px;
+  width: 27em;
   height: 700px;
   -ms-transform: skewY(-20deg);
   -webkit-transform: skewY(-20deg);
