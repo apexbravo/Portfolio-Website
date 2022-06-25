@@ -152,6 +152,15 @@ body {
   color: white;
 }
 
+.showcase-btn:hover {
+  background-color: #394b8c;
+  color: white;
+}
+
+#resumetag {
+  font-size: 2rem;
+}
+
 /****************************************************Icons Wrapper************/
 .wrapper {
   text-align: center;
